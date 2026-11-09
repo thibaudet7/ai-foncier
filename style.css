@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+#imageCanvas, #georefCanvas {
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    max-width: 100%;
+}
+
+#zoomControls, #geoControls {
+    margin-top: 10px;
+}
+
+button {
+    padding: 8px 12px;
+    margin: 5px;
+    border: none;
+    background-color: #5cb85c;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+#csvUploadStatus, #conversionOptions, #jsonDownload {
+    margin-top: 20px;
+}
+
+input[type="file"] {
+    margin-top: 10px;
+}

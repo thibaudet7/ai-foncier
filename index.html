@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coordinate Conversion and Image Processing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Coordinate Conversion and Image Processing</h1>
+
+    <!-- CSV Upload Form -->
+    <h2>Upload CSV File</h2>
+    <input type="file" id="csvFileInput" accept=".csv">
+    <button id="uploadCsvBtn">Upload CSV</button>
+    <div id="csvUploadStatus"></div>
+
+    <!-- JSON Conversion Option -->
+    <div id="conversionOptions" style="display: none;">
+        <h2>Select Conversion Option</h2>
+        <input type="radio" id="nouveauDouala" name="conversion" value="nouveau-Douala">
+        <label for="nouveauDouala">Nouveau-Douala</label><br>
+        <input type="radio" id="ancienDouala" name="conversion" value="ancien-Douala">
+        <label for="ancienDouala">Ancien-Douala</label><br>
+        <button id="convertBtn">Convert Coordinates</button>
+    </div>
+
+    <!-- JSON Download Link -->
+    <div id="jsonDownload" style="display: none;">
+        <h2>Download Converted JSON</h2>
+        <a href="#" id="downloadJsonBtn">Download JSON</a>
+    </div>
+
+    <!-- Image Cropper Section -->
+    <div id="imageCropper" style="display: none;">
+        <h2>Image Cropper</h2>
+        <input type="file" id="imageInput" accept="image/png">
+        <br><br>
+        <canvas id="imageCanvas"></canvas>
+        <br>
+        <div id="zoomControls">
+            <button id="zoomIn">Zoom In</button>
+            <button id="zoomOut">Zoom Out</button>
+            <button id="save">Save Cropped Image</button>
+        </div>
+    </div>
+
+   <!-- Georeferencing Section -->
+   <div id="georeferencing" style="display: none;">
+    <h2>Georeferencing</h2>
+    <canvas id="georeferencingCanvas"></canvas>
+    <div id="georeferencingControls">
+        <button id="zoomInGeo">Zoom In</button>
+        <button id="zoomOutGeo">Zoom Out</button>
+        <button id="panTool">Pan Tool</button>
+        <button id="startGeoreferencing">Start Georeferencing</button>
+        <button id="saveGeoreferencedImage">Save Georeferenced Image</button>
+    </div>
+</div>
+
+<div id="downloadGeoreferenced" style="display: none;">
+    <h2>Download Georeferenced Image</h2>
+    <button id="downloadGeoreferencedBtn">Download Georeferenced Package</button>
+</div>
+
+<script src="app.js"></script>
+<script src="crop_script.js"></script>
+<script src="georeferencing.js"></script>
+</body>
+</html>

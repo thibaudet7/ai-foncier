@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Georeferencing</title>
+    <style>
+        #imageCanvas {
+            border: 1px solid black;
+        }
+        .controls {
+            margin-top: 10px;
+        }
+        button {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Georeferencing</h1>
+    <div class="controls">
+        <button id="zoomIn">Zoom In</button>
+        <button id="zoomOut">Zoom Out</button>
+        <button id="panTool">Pan Tool</button>
+        <button id="startGeoreferencing">Start Georeferencing</button>
+        <button id="saveGeoreferencedImage">Save Georeferenced Image</button>
+    </div>
+    <canvas id="imageCanvas"></canvas>
+
+    <script src="georeference.js"></script>
+</body>
+</html>

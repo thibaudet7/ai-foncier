@@ -1,0 +1,21 @@
+/projet-foncier
+│
+├── index.html          # Main HTML file for the user interface
+├── app.js              # JavaScript file to handle front-end logic
+├── upload.php          # PHP file to handle file uploads
+├── convert.php         # PHP file to handle coordinate conversion
+├── download.php        # PHP file to handle file downloads
+├── detect_polygons.php # PHP file to run the polygon detection Python script
+├── app.py              # Python script to handle coordinate conversion
+├── detect_polygons.py  # Python script to detect polygons and extract text from the PNG image
+├── /images              # Directory to store uploaded images and CSV files
+│   ├── cropped_parcel.png # Cropped PNG image uploaded by the user
+│   └── mytable.csv     # CSV file uploaded by the user
+│
+├── /jsonfolder         # Directory to store generated JSON files
+│   ├── myjson.json     # JSON file containing converted coordinates
+│   ├── polygon_data.json # JSON file containing detected polygons and their associated text
+│
+├── /georef             # Directory to store georeferenced images and their metadata
+│   └── cropped_parcel.png # Georeferenced PNG image after polygon detection and georeferencing
+└── /assets             # Directory to store any static assets like CSS or JS libraries (e.g., Leaflet)
